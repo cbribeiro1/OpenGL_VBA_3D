@@ -1,0 +1,29 @@
+Efetuar alterações na class cGame
+
+TIMELINE no vídeo 22:09
+====================
+#If VBA7 Then
+    Private g_flatshadedObject As LongPtr
+#Else
+    Private g_flatshadedObject&
+#End If
+
+
+TIMELINE no video 35:53
+=======================
+Function FrameRate()
+Static frame&, actualframe&
+#If VBA7 Then
+    Static time As LongPtr, lasttime As LongPtr, lastturn As LongPtr
+#Else
+    Static time&, lasttime&, lastturn&
+#End If
+
+TIMELINE no video 38:13
+=======================
+Function BallCollisionDetection()
+#If VBA7 Then
+    Static time As LongPtr, lastcalc As LongPtr
+#Else
+    Static time&, lastcalc&
+#End If
